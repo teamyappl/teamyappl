@@ -4,7 +4,7 @@ index_title: Max Meldrum # same as title in index.html file, so that custom desc
 blog_title: Coding zone
 header-img: img/home-bg.jpg
 email: max@meldrum.se
-copyright_name: ShikherVerma
+#copyright_name: ShikherVerma
 description: "meldrum"
 baseurl: "" #base url is for when the site is not at the root but at some subdirectory.
 #url: http://shikherverma.com #only used in disque comments for now
