@@ -1,17 +1,17 @@
 # Site settings
-title: My Territory
-index_title: Shikher Verma # same as title in index.html file, so that custom description can be set in page.html layout.
-blog_title: My Territory
+title: Zone
+index_title: Max Meldrum # same as title in index.html file, so that custom description can be set in page.html layout.
+blog_title: Coding zone
 header-img: img/home-bg.jpg
-email: root@shikherverma.com
+email: max@meldrum.se
 copyright_name: ShikherVerma
-description: "Online Territory of Shikher Verma"
+description: "meldrum"
 baseurl: "" #base url is for when the site is not at the root but at some subdirectory.
-url: http://shikherverma.com #only used in disque comments for now
-disqus_url: shikherverma.com # disque comments are broken if you send http:// along with url
-github_username:  shikherverma
-facebook_username:  shikherverma1
-email_username:  root@shikherverma.com
+#url: http://shikherverma.com #only used in disque comments for now
+#disqus_url: shikherverma.com # disque comments are broken if you send http:// along with url
+github_username:  Max-Meldrum
+#facebook_username:  shikherverma1
+email_username:  max@meldrum.se
 collections:
   - portfolio
 
