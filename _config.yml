@@ -1,6 +1,6 @@
 # Site settings
-title: The Nerds 
-index_title: test # same as title in index.html file, so that custom description can be set in page.html layout.
+title: 
+index_title: Developer Community # same as title in index.html file, so that custom description can be set in page.html layout.
 blog_title: Development Blog
 header-img: img/home-bg.jpg
 email: max@meldrum.se
