@@ -4,9 +4,9 @@ index_title: Young Ambitious People # same as title in index.html file, so that 
 blog_title: Development Blog
 header-img: img/home-bg.jpg
 email: max@meldrum.se
-description: "Yappl"
+description: "Developer team"
 baseurl: "" #base url is for when the site is not at the root but at some subdirectory.
-#url: http://url.com #only used in disque comments for now
+url: http://yappl.se #only used in disque comments for now
 disqus_url: teamyappl-github-io.disqus.com # disque comments are broken if you send http:// along with url
 github_username:  yappl
 email_username:  max@meldrum.se
