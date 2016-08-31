@@ -3,13 +3,13 @@ title:
 index_title: Young Ambitious People # same as title in index.html file, so that custom description can be set in page.html layout.
 blog_title: Development Blog
 header-img: img/home-bg.jpg
-email: max@meldrum.se
+email: info@yappl.se
 description: "Developer team"
 baseurl: "" #base url is for when the site is not at the root but at some subdirectory.
 url: http://yappl.se #only used in disque comments for now
 disqus_url: teamyappl-github-io.disqus.com # disque comments are broken if you send http:// along with url
 github_username:  yappl
-email_username:  max@meldrum.se
+email_username:  info@yappl.se
 copyright_name: Yappl
 collections:
   - portfolio
