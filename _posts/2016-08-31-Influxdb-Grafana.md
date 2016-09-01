@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Data visualization with Influxdb and Grafana"
+title:      "Data visualization with InfluxDB and Grafana"
 subtitle:   "Scala & Akka HTTP"
 date:       2016-08-31 17:00:00
 author:     "Max Meldrum"
@@ -11,18 +11,17 @@ tags: General
 
 ## Data visualization with InfluxDB and Grafana
 
-The purpose of this post will be to show how one can use InfluxDB and Grafana to display custom graphs. Down below is how the final output looks like. One graph showing the total requests of the system and the other the CPU of imaginery hosts.
+The purpose of this post will be to show how one can use InfluxDB and Grafana to display custom graphs. Down below is how the final output looks like. One graph showing the total requests of the system and the other the CPU of imaginary hosts.
 
 ![](../img/posts/influxdb-grafana/datavisualyappl.PNG)
 
 Down below are the things that we will go through.
 
 1. Brief introduction of InfluxDB and Grafana
-2. Setting up Influxdb and Grafana using Docker
+2. Setting up InfluxDB and Grafana using Docker
 3. Running the Scala application
 4. Sending in data to InfluxDB
 5. Creating graphs in Grafana
-
 
 
 ### InfluxDB
@@ -35,7 +34,7 @@ InfluxDB is an open source time series database. It's useful for recording metri
 
 ![](../img/posts/influxdb-grafana/grafana.png)
 
-Grafana is an open source metrics dashboard and graph editor for several datasources such as Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB
+Grafana is an open source metrics dashboard and graph editor for several data sources such as Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB
 
 ### Setting up InfluxDB and Grafana
 
@@ -99,6 +98,10 @@ Running it in the terminal:
     # Needs to be run in the folder where build.sbt resides
     sbt run
 
+If you are running InfluxDB on another computer then you can send the IP of the host as an argument:
+
+    sbt "run 192.168.0.8"
+
 Another option is to open the project in a IDE such as intellij IDEA. Just make sure that you have Scala installed.
 
 
@@ -119,10 +122,9 @@ Head over to the InfluxDB administrator interface at ip:8083 and choose the data
 In the project repository there is a folder called scripts. Inside it there are 4 shell scripts that continuously send requests to the REST interface and inputs fake CPU stats. Open up 4 terminals and start every single script. 
 
 
-
 ### Configuring Grafana to show the graphs
 
-Head over to the Grafana interface again. It is time to create a dashboard. On the left side you should be able to see a little green box, if you hover over that you should be able to see an option called Add Panel. Click on it and choose Graph. Click on the Panel Title and you should be able to see a Edit option. 
+Head over to the Grafana interface again. It is time to create a dashboard. On the left side you should be able to see a little green box, if you hover over it and click that you should be able to see an option called Add Panel. Click on it and choose Graph. Click on the Panel Title and you should be able to see a Edit option. 
 
 
 ![](../img/posts/influxdb-grafana/grafanaCreateGraph.png)
